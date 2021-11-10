@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/light_red"
+    android:layout_margin="5dp"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/ic_waist" />
+
+    <TextView
+        android:id="@+id/item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:paddingLeft="5dp"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/item_name" />
+
+
+    <TextView
+        android:id="@+id/item_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:paddingLeft="5dp"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@id/item_name"
+        tools:text="@string/item_id" />
+
+    <TextView
+        android:id="@+id/item_rank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/item_id"
+        app:layout_constraintTop_toBottomOf="@+id/item_name"
+        tools:text="@string/item_rank" />
+
+    <TextView
+        android:id="@+id/item_rarity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/item_rank"
+        app:layout_constraintTop_toBottomOf="@+id/item_name"
+        tools:text="@string/item_rarity" />
+
+    <TextView
+        android:id="@+id/defense_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Defense"
+        android:fontFamily="monospace"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/item_rank" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/DefenseStats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/defense_title"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/base_defense"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="5dp"
+            android:textSize="15sp"
+            tools:text="Base Defense " />
+        <TextView
+            android:id="@+id/max_defense"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="5dp"
+            android:textSize="15sp"
+            tools:text="Max Defense" />
+        <TextView
+            android:id="@+id/augmented_defense"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            tools:text="Augmented Defense" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Test Application</string>
+    <string name="home_fragment">Home Fragment</string>
+    <string name="second_fragment">Second Fragment</string>
+    <string name="go_to_other_fragment">Go To Other Fragment</string>
+    <string name="fetch_data">Fetch Data</string>
+
+    <string name="item_name">Item Name is: </string>
+    <string name="item_id">Item Id is: </string>
+    <string name="item_rank">Item Rank is: </string>
+    <string name="item_rarity"> Item Rarity is: </string>
+
+    <string name="Defense">Defense Stats</string>
+    <string name="Resistance">Resistance Stats</string>
+
+</resources>
